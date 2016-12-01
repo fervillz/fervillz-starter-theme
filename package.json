@@ -1,0 +1,40 @@
+{
+  "name": "fervillz-starter-theme",
+  "version": "1.0.0",
+  "description": "Wordpress starter theme",
+  "main": "gulp.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fervillz/fervillz-starter-theme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "starter",
+    "theme",
+    "wp",
+    "themes",
+    "WordPress",
+    "gulp",
+    "simple",
+    "website",
+    "github",
+    "fervillz",
+    "fernandovillamorjr.com",
+    "fernando",
+    "villamor"
+  ],
+  "author": "fernando villamor jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fervillz/fervillz-starter-theme/issues"
+  },
+  "homepage": "https://github.com/fervillz/fervillz-starter-theme#readme"
+}

@@ -8,7 +8,3 @@ gulp.task('sass', function () {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('assets/css'));
 });
-
-gulp.task('default', function() {
-  // place code for your default task here
-});
