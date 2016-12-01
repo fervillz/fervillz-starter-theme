@@ -8,3 +8,6 @@ gulp.task('sass', function () {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('assets/css'));
 });
+
+// What will be run with simply writing "$ gulp"
+gulp.task('default', ['sass']);
