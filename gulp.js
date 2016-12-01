@@ -1,7 +1,7 @@
 'use strict';
  
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp = require('gulp'),
+	sass = require('gulp-sass');
 
 gulp.task('sass', function () {
   return gulp.src('assets/sass/**/*.scss')
@@ -9,5 +9,17 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('assets/css/'));
 });
 
+
+gulp.task('test', function () {
+	console.log("hello");
+} );
+
+//watch files and performs tasks when an event happens.
+gulp.task('watch', function() {
+    // Watch .scss files
+    gulp.watch('assets/sass/**/*.scss', ['sass']);
+    // Watch .js files    
+})
+
 // What will be run with simply writing "$ gulp"
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'watch']);
