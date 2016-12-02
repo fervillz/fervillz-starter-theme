@@ -21,11 +21,6 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('assets/css/'));
 });
 
-
-gulp.task('test', function () {
-	console.log("hello");
-} );
-
 //watch files and performs tasks when an event happens.
 gulp.task('watch', function() {
     // Watch .scss files
