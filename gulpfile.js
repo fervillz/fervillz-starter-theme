@@ -2,7 +2,8 @@
 
 //Load the plugins 
 var gulp = require('gulp'),
-	sass = require('gulp-sass');
+	sass = require('gulp-sass'),
+	autoprefixer = require('gulp-autoprefixer');
 
 // compile scss and minify.
 // this can run from Terminal with $ gulp sass.
@@ -11,6 +12,11 @@ gulp.task('sass', function () {
   	//We use .pipe() to pipe the source file(s) to a plugin.
     //compile the scss
     .pipe(sass.sync().on('error', sass.logError))
+    //add browser prefixes
+    .pipe(autoprefixer({
+            browsers: ['last 10 versions'],
+            cascade: false
+     }))
     //output it in 
     .pipe(gulp.dest('assets/css/'));
 });
