@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify');  
 
 //script paths
-var jsFiles = 'assets/js/**/*.js',  
+var jsFiles = 'assets/js/js-partials/**/*.js',  
     jsDest = 'assets/js';
 
 // compile scss and minify.
@@ -43,6 +43,7 @@ gulp.task('watch', function() {
     // Watch .scss files
     gulp.watch('assets/sass/**/*.scss', ['sass']);
     // Watch .js files    
+    gulp.watch('assets/js/**/*.js', ['scripts']);
 })
 
 // What will be run with simply writing "$ gulp"
