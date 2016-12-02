@@ -32,6 +32,9 @@ gulp.task('sass', function () {
 gulp.task('scripts', function() {  
     return gulp.src(jsFiles)
         .pipe(concat('scripts.js'))
+        .pipe(gulp.dest(jsDest))
+        .pipe(rename('scripts.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest(jsDest));
 });
 
