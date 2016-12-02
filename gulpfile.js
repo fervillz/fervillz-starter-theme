@@ -8,8 +8,12 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),  
 	uglify = require('gulp-uglify');  
 
-//script paths
-var jsFiles = 'assets/js/js-partials/**/*.js',  
+//frontend script paths
+var jsFilesFrontend = 'assets/js/js-frontend/**/*.js',  
+    jsDest = 'assets/js';
+
+//admin script paths
+var jsFilesAdmin = 'assets/js/js-admin/**/*.js',  
     jsDest = 'assets/js';
 
 // compile scss and minify.
@@ -30,10 +34,20 @@ gulp.task('sass', function () {
 
 //scripts optimizer
 gulp.task('scripts', function() {  
-    return gulp.src(jsFiles)
+    return gulp.src(jsFilesFrontend)
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest(jsDest))
         .pipe(rename('scripts.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(jsDest));
+});
+
+//scripts optimizer
+gulp.task('scripts-admin', function() {  
+    return gulp.src(jsFilesAdmin)
+        .pipe(concat('scripts.admin.js'))
+        .pipe(gulp.dest(jsDest))
+        .pipe(rename('scripts.admin.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(jsDest));
 });
@@ -43,7 +57,7 @@ gulp.task('watch', function() {
     // Watch .scss files
     gulp.watch('assets/sass/**/*.scss', ['sass']);
     // Watch .js files    
-    gulp.watch('assets/js/**/*.js', ['scripts']);
+    gulp.watch('assets/js/**/*.js', ['scripts'], ['scripts-admin']);
 })
 
 // What will be run with simply writing "$ gulp"
