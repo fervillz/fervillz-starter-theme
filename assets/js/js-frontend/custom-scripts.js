@@ -11,7 +11,7 @@ jQuery( document ).ready( function ( $ ) {
 	var myHeader = document.querySelector("#masthead");
 	
 	// construct an instance of Headroom, passing the element
-	var headroom  = new Headroom(myHeader, {
+	var headroom  = new Headroom(myHeader, { 
 	  "offset": 90,
 	  tolerance : {
 			up : 5,
@@ -21,5 +21,4 @@ jQuery( document ).ready( function ( $ ) {
 
 	// initialise
 	headroom.init(); 
-
 });

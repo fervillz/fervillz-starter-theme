@@ -9,12 +9,9 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
     livereload = require('gulp-livereload');
 
-//frontend script paths
-var jsFilesFrontend = 'assets/js/js-frontend/**/*.js',  
-    jsDest = 'assets/js';
-
-//admin script paths
-var jsFilesAdmin = 'assets/js/js-admin/**/*.js',  
+//script paths
+var jsFilesFrontend = 'assets/js/js-frontend/**/*.js', 
+    jsFilesAdmin = 'assets/js/js-admin/**/*.js', 
     jsDest = 'assets/js';
 
 // compile scss and minify.
@@ -61,8 +58,10 @@ gulp.task('watch', function() {
     livereload.listen();
     // Watch .scss files
     gulp.watch('assets/sass/**/*.scss', ['sass']);
-    // Watch .js files    
-    gulp.watch('assets/js/**/*.js', ['scripts'], ['scripts-admin']);
+    // Watch front .js files    
+    gulp.watch('assets/js/js-frontend/**/*.js', ['scripts']);
+    // Watch admin .js files    
+    gulp.watch('assets/js/js-admin/**/*.js', ['scripts-admin']);
 })
 
 // What will be run with simply writing "$ gulp"
