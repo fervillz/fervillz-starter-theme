@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),  
 	rename = require('gulp-rename'),  
 	uglify = require('gulp-uglify'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
+    notify = require("gulp-notify");
 
 //script paths
 var jsFilesFrontend = 'assets/js/js-frontend/**/*.js', 
@@ -29,7 +30,11 @@ gulp.task('sass', function () {
     //output it in 
     .pipe(gulp.dest('assets/css/'))
     //enable livereload   
-    .pipe(livereload());
+    .pipe(livereload())
+    //notify for successful sass compilation
+    .pipe(notify({
+            title: "Sass done!!!"
+    }));
 });
 
 //scripts optimizer
@@ -39,7 +44,11 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(jsDest))
         .pipe(rename('scripts.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest(jsDest));
+        .pipe(gulp.dest(jsDest))
+        //notify for successful scripts compilation
+        .pipe(notify({
+                title: "Scripts frontend done!!!"
+        }));
 });
 
 //scripts optimizer
@@ -49,7 +58,11 @@ gulp.task('scripts-admin', function() {
         .pipe(gulp.dest(jsDest))
         .pipe(rename('scripts.admin.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest(jsDest));
+        .pipe(gulp.dest(jsDest))
+        //notify for successful scripts compilation
+        .pipe(notify({
+                title: "Scripts admin done!!!"
+        }));
 });
 
 //watch files and performs tasks when an event happens.
