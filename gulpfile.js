@@ -6,7 +6,8 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	concat = require('gulp-concat'),  
 	rename = require('gulp-rename'),  
-	uglify = require('gulp-uglify');  
+	uglify = require('gulp-uglify'),
+    livereload = require('gulp-livereload');
 
 //frontend script paths
 var jsFilesFrontend = 'assets/js/js-frontend/**/*.js',  
@@ -29,7 +30,9 @@ gulp.task('sass', function () {
             cascade: false
      }))
     //output it in 
-    .pipe(gulp.dest('assets/css/'));    
+    .pipe(gulp.dest('assets/css/'))
+    //enable livereload   
+    .pipe(livereload());
 });
 
 //scripts optimizer
@@ -54,6 +57,8 @@ gulp.task('scripts-admin', function() {
 
 //watch files and performs tasks when an event happens.
 gulp.task('watch', function() {
+    //enable livereload
+    livereload.listen();
     // Watch .scss files
     gulp.watch('assets/sass/**/*.scss', ['sass']);
     // Watch .js files    

@@ -1,0 +1,10 @@
+// Custom media query breakpoints.
+$breakpoint-mobile: 480px;
+
+// Standart set media queries
+$breakpoint-small: 	640px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 	1140px;
+
+// Some elements must have max-width for mobile view.
+$mobile-layout-width-limit: 80vw;

@@ -1,0 +1,6 @@
+// Extend this and add transform property.
+.StarterAnimated {
+	transition-timing-function: cubic-bezier(.68,-.55,.265, 1.55);
+	transition-duration: .3s;
+	transition-property: transform,-webkit-transform;
+}
