@@ -1,6 +1,6 @@
 === fervillz starter theme ===
 
-Contributors: automattic
+Contributors: fervillz
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
