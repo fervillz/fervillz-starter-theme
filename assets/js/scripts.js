@@ -17,7 +17,7 @@ jQuery( document ).ready( function ( $ ) {
 			up : 5,
 			down : 0
 		}
-	});
+	}); 
 
 	// initialise 
 	headroom.init(); 

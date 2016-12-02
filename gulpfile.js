@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),  
 	uglify = require('gulp-uglify'),
     livereload = require('gulp-livereload'),
-    notify = require("gulp-notify");
+    notify = require("gulp-notify"),
+    sourcemaps = require('gulp-sourcemaps');
 
 //script paths
 var jsFilesFrontend = 'assets/js/js-frontend/**/*.js', 
@@ -27,6 +28,8 @@ gulp.task('sass', function () {
             browsers: ['last 10 versions'],
             cascade: false
      }))
+    //sourcemaps
+    .pipe(sourcemaps.write('.'))
     //output it in 
     .pipe(gulp.dest('assets/css/'))
     //enable livereload   
@@ -42,7 +45,7 @@ gulp.task('scripts', function() {
     return gulp.src(jsFilesFrontend)
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest(jsDest))
-        .pipe(rename('scripts.min.js'))
+        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest(jsDest))
         //notify for successful scripts compilation
@@ -56,7 +59,7 @@ gulp.task('scripts-admin', function() {
     return gulp.src(jsFilesAdmin)
         .pipe(concat('scripts.admin.js'))
         .pipe(gulp.dest(jsDest))
-        .pipe(rename('scripts.admin.min.js'))
+        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest(jsDest))
         //notify for successful scripts compilation
