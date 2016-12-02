@@ -3,7 +3,14 @@
 //Load the plugins 
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	concat = require('gulp-concat'),  
+	rename = require('gulp-rename'),  
+	uglify = require('gulp-uglify');  
+
+//script paths
+var jsFiles = 'assets/js/**/*.js',  
+    jsDest = 'assets/js';
 
 // compile scss and minify.
 // this can run from Terminal with $ gulp sass.
@@ -18,7 +25,14 @@ gulp.task('sass', function () {
             cascade: false
      }))
     //output it in 
-    .pipe(gulp.dest('assets/css/'));
+    .pipe(gulp.dest('assets/css/'));    
+});
+
+//scripts optimizer
+gulp.task('scripts', function() {  
+    return gulp.src(jsFiles)
+        .pipe(concat('scripts.js'))
+        .pipe(gulp.dest(jsDest));
 });
 
 //watch files and performs tasks when an event happens.
