@@ -22,14 +22,14 @@ gulp.task('sass', function () {
   return gulp.src('assets/sass/**/*.scss')
   	//We use .pipe() to pipe the source file(s) to a plugin.
     //compile the scss
-    .pipe(sass.sync().on('error', sass.logError))
-    //add browser prefixes
-    .pipe(autoprefixer({
-            browsers: ['last 10 versions'],
-            cascade: false
-     }))
-    //sourcemaps
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.init())  // Process the original sources
+        .pipe(sass.sync().on('error', sass.logError))
+        //add browser prefixes
+        .pipe(autoprefixer({
+                browsers: ['last 10 versions'],
+                cascade: false
+        }))
+    .pipe(sourcemaps.write()) // Add the map to modified source.    
     //output it in 
     .pipe(gulp.dest('assets/css/'))
     //enable livereload   
