@@ -3,7 +3,7 @@
 
 Use Gulp with WordPress. An advanced but portable Gulp workflow for WordPress. Start using Gulp with your WordPress plugins and themes.
 
-![](https://i.imgur.com/zzoByRC.png)
+![](http://imgur.com/vkuoFH2)
 
 ## ⓦ What Can WPGulp Do?
 1. Live reloads browser with BrowserSync
