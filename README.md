@@ -1,16 +1,9 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
-
-Fervillz Starter Theme
-===
-
-# WPGulp
-[![Project Supported by](https://img.shields.io/badge/Project_Supported_By-ES6.io%20Tutorials-brightgreen.svg?style=flat-square)](https://ahmda.ws/Learn_ES6) [![WPGulp](https://img.shields.io/badge/Built%20For%20WordPress-%E2%93%A6-lightgrey.svg?style=flat-square)](https://github.com/ahmadawais/WPGulp/) [![](https://img.shields.io/wordpress/v/akismet.svg?maxAge=2592000&style=flat-square&label=WordPress)](https://github.com/ahmadawais/WPGulp/) [![GitHub release](https://img.shields.io/github/release/ahmadawais/WPGulp.svg?maxAge=2592000&style=flat-square&label=Version)](https://github.com/ahmadawais/WPGulp/releases) [![](https://img.shields.io/github/stars/ahmadawais/WPGulp.svg?style=social&label=Star&maxAge=2592000)](https://github.com/ahmadawais/WPGulp/)
+# Fervillz Starter Theme
+[![Project Supported by](https://img.shields.io/badge/Project_Supported_By-ES6.io%20Tutorials-brightgreen.svg?style=flat-square)](https://github.com/fervillz/fervillz-starter-theme/Learn_ES6) [![WPGulp](https://img.shields.io/badge/Built%20For%20WordPress-%E2%93%A6-lightgrey.svg?style=flat-square)](https://github.com/ahmadawais/WPGulp/) [![](https://img.shields.io/wordpress/v/akismet.svg?maxAge=2592000&style=flat-square&label=WordPress)](https://github.com/fervillz/fervillz-starter-theme/) [![GitHub release](https://img.shields.io/github/release/ahmadawais/WPGulp.svg?maxAge=2592000&style=flat-square&label=Version)](https://github.com/fervillz/fervillz-starter-theme/releases) [![](https://img.shields.io/github/stars/ahmadawais/WPGulp.svg?style=social&label=Star&maxAge=2592000)](https://github.com/fervillz/fervillz-starter-theme/)
 
 Use Gulp with WordPress. An advanced but portable Gulp workflow for WordPress. Start using Gulp with your WordPress plugins and themes.
 
 ![](https://i.imgur.com/zzoByRC.png)
-
-Read: [Introducing WPGulp: An Easy to Use WordPress Gulp Boilerplate](https://ahmadawais.com/introducing-wpgulp-an-easy-to-use-wordpress-gulp-boilerplate/)
 
 ## ⓦ What Can WPGulp Do?
 1. Live reloads browser with BrowserSync
@@ -106,7 +99,7 @@ Once the download is complete type `gulp` and boom!
 - You must have [Git](https://git-scm.com/) and [NodeJS](https://nodejs.org/en/download/), and [Gulp](http://gulpjs.com/) installed globally. 
 
 ### WPGulpTheme
-Checkout a basic WordPress theme implementation with WPGulp called [WPGulpTheme](https://github.com/ahmadawais/WPGulpTheme). This theme demonstrates the architecture followed by default within WPGulp, which is most definitely optional.
+Checkout a basic WordPress theme implementation with WPGulp called [WPGulpTheme](https://github.com/fervillz/fervillz-starter-theme/). This theme demonstrates the architecture followed by default within WPGulp, which is most definitely optional.
 
 ## To do 
 It's hard to maintain a FOSS free and open source software project on my own. Which is why there's a backlog and an incomplete to-do list.
@@ -122,23 +115,8 @@ I am looking for WordPress ⓦ developers to contribute. I am open to all kinds 
 ## Changelog
 
 ###Version 1.0.3
-- FIX: Required `gulp-wp-pot`
-- FIX: Required `gulp-sort`
-- IMPROVEMENT: Better docs for Translation variables
-
-###Version 1.0.2 
-- NEW: Documentation update `README.md` 
-- TASK: Image optimization `gulp images`
-- TASK: WP POT Translation file generation `gulp translate`
-
-###Version 1.0.1 
-- BrowserSync
-- LineEndings
-
-### Version 1.0.0 
-- First version
-- CSS, JS, PHP and Watch Routines
+- Github uploaded
 
 ## License
 Released under GNU GPLv2.0 or later license.
-Copyright [Ahmad Awais](https://AhmadAwais.com/)
+Copyright [Fernando Villamor Jr](https://fernandovillamorjr.com/)
