@@ -1,0 +1,66 @@
+.list_col_vendor_thumb {
+	&.dashicons-format-image {
+		display: flex;
+		flex-wrap: wrap;
+		width: 48px;
+		height: 48px;
+		border: 1px solid #d6d6d6;
+		align-items: center;
+		justify-content: center;
+		color: #d0d0d0;
+		background: white;
+	}
+}
+
+.image_prev.hidden {
+	display: none !important;
+}
+
+.image_prev_text.hidden {
+	display: none !important;
+}
+
+.image_prev {
+	cursor: pointer;
+}
+
+.button-select {
+	text-transform: capitalize;
+}
+
+body.login {
+	font-size: 16px;
+
+	input[type=text]:focus,
+	input[type=email]:focus {
+		border-color: #d1b06f;
+	    box-shadow: 0 0 2px #d1b06f;
+	}
+
+	div#login form#loginform p.submit input#wp-submit,
+	#registerform input#wp-submit {
+		text-transform: uppercase;
+	  	display: inline-block;
+	    appearance: none;
+	    padding: 10px 30px;
+	    transition: all 100ms ease-out;
+	    background: #d1b06f;
+		color: #fff;   
+		border: none;
+		border-radius: 0;
+		height: auto; 	
+		text-shadow: none;
+		box-shadow: none;
+		font-size: 16px;
+
+    	&:hover {
+    		background: #fff;
+    		color: #d1b06f;    	
+    		box-shadow: 0 0 0 1px #d1b06f;
+    	}
+	}
+
+	a:hover {
+		color: #d1b06f !important;  	
+	}
+}

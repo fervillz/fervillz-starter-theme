@@ -1,0 +1,9 @@
+.acf-field {
+	&[data-name="vendor_feature_image"] {
+		padding: 0;
+		
+		.acf-label {
+			display: none;
+		}
+	}
+}

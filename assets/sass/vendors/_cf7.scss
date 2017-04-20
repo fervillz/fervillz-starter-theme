@@ -19,3 +19,50 @@
 		color: white;
 	}
 }
+
+.cf7-contact {
+	margin-top: 20px;
+	
+	.cf7-input {
+		position: relative;
+		margin-bottom: 30px;
+
+		.fa {
+			position: absolute;
+		    z-index: 2;
+		    color: #c7c7c7;
+		    top: 13px;
+		    left: 15px;
+		}
+
+		input,
+		textarea {
+			text-indent: 29px;
+		}
+	}
+}
+
+input.wpcf7-not-valid {
+	border-color: red !important;
+}
+
+span.wpcf7-not-valid-tip {
+	display: none;
+}
+
+div.wpcf7-response-output {
+	border: none;
+    color: #000;
+    margin: 0;
+    line-height: normal;
+    padding: 13px;
+}
+
+div.wpcf7-validation-errors {
+    background: #fbfba2;
+    color: #000;
+}
+
+div.wpcf7-mail-sent-ng {
+	background: #fba2a2;
+}

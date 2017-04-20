@@ -1,0 +1,280 @@
+.pmpro_box {
+	padding: 40px;
+	background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+
+    ul {
+    	margin: 0;
+    }
+}
+
+#pmpro_account table {
+	th {
+	    padding-bottom: 6px;
+	}
+
+	tr {
+		border-bottom: 1px solid #e6e6e6;
+	}
+
+	td {
+		padding: 20px 0;
+	}
+
+	a {
+		color: $color__blue;
+		text-decoration: none;
+	}
+}
+
+#pmpro_account-invoices table {
+	td {
+	    padding: 7px;
+	}
+}
+
+.pmpro_actionlinks a {
+	color: $color__blue;
+	text-decoration: underline;
+}
+
+.pmpro_checkout {
+	margin-top: 40px;
+
+	.pmpro_thead-name {
+		font-size: 24px;
+		font-family: $font-serif;
+		text-align: left;
+		font-weight: normal;
+		border-bottom: 1px solid #e3e3e3;
+		padding-bottom: 5px;
+	}
+
+	p {
+		margin: 7px 0;
+	}
+
+	
+}
+
+#pmpro_billing_address_fields {
+    width: 100%; 
+
+    @media ( min-width: 768px ) {
+    	float: left;
+	    width: calc(50% - 15px);
+	    margin-right: 15px;
+    }
+
+	thead th {
+		font-size: 24px;
+		font-family: $font-serif;
+		text-align: left;
+		font-weight: normal;
+		border-bottom: 1px solid #e3e3e3;
+		padding-bottom: 5px;
+	}
+
+	td {
+		
+	    padding-top: 39px;
+	    display: block;
+
+	    @media ( min-width: 768px ) {
+			display: flex;
+			margin: 0 -7px;
+			flex-wrap: wrap;
+	    }
+
+		div {
+			margin-bottom: 14px;
+
+			@media ( min-width: 768px ) {
+				flex: 1 1 100%;
+				padding: 7px;
+				margin-bottom: 0;
+		    }	
+
+			@media ( min-width: 992px ) {
+				flex: 1 1 50%;		
+
+	    		&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5),
+				&:nth-child(8) {
+					flex-basis: 100%;
+				}
+			}			
+		}
+	}
+}
+
+.pmpro_thead-msg {
+	@media ( min-width: 768px ) {
+		margin-bottom: 1px;
+	}
+
+	@media ( min-width: 992px ) {
+		margin-bottom: 23px;
+	}
+}
+
+#pmpro_payment_information_fields {   
+	width: 100%; 
+
+    @media ( min-width: 768px ) {
+    	width: calc(50% - 15px);
+    	float: right;
+    	margin-left: 15px;
+    }
+}
+
+#pmpro_pricing_fields {
+	tbody {
+		background: #f2f2f2;	
+		border: 1px solid #cbcbcb;
+		border-radius: 3px;
+		padding: 14px 25px;
+		display: inline-block;
+		width: 100%;
+	    margin-top: 38px;
+	   	margin-bottom: 20px;
+	}		
+}
+
+.pmpro_form {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	textarea,
+	select {
+		background: #fff;
+	}
+
+	label {
+		font-weight: bold;
+	    text-align: left;
+	    font-size: 15px;
+	    display: block;
+	    margin: 8px 0 5px;
+	}
+
+}
+
+.pmpro-checkout,
+.pmpro-levels {
+	background: #fafafa;
+}
+
+#pmpro_user_fields {
+	td {
+		display: block;
+
+		@media ( min-width: 768px ) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -7px;
+	    }
+
+		div {			
+			margin-bottom: 14px;	
+
+			@media ( min-width: 768px ) {
+				padding: 7px;
+				flex: 0 1 50%;	
+				margin-bottom: 0;	
+		    }	
+
+			@media ( min-width: 992px ) {
+				flex: 0 1 33.3333%;	
+				padding: 7px;
+		    }
+		}
+	}
+}
+
+.pmpro_asterisk {
+	display: none;
+}
+
+.pmpro_btn.pmpro_btn-submit-checkout {
+	background: $color-primary;
+		color: #fff;    	
+
+    	&:hover {
+    		background: #fff;
+    		color: $color-primary;    		
+    	}
+}
+
+#ExpirationMonth {
+    max-width: 110px;
+    margin-right: 10px;
+}
+
+.pmpro_payment-cvv input {
+	float: left;
+	max-width: 110px;
+    margin-right: 10px;
+
+    small {
+    	margin-top: 15px;
+    	float: left;
+    }
+}
+
+#ExpirationYear {
+	max-width: 110px;
+	margin-left: 10px;
+}
+
+.pmpro_payment-expiration {
+	margin-top: 23px !important;
+}
+
+.pmpro_payment-cvv {
+	margin-top: 21px !important;
+}
+
+.pmpro_invoice {
+	text-align: left;
+    background: #f9fafd;
+    border: 1px solid #d6e6ef;
+
+    tr {
+    	line-height: 1.8em;
+    }
+}
+
+#pmpro_levels_table {
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ececec;
+
+    td,
+    th {
+    	padding: 10px;
+    }
+
+    .pmpro_btn {
+    	padding: 7px 20px;
+
+    	&:hover {
+    		box-shadow: 0 0 3px 0 $color-primary;
+    	}
+    }
+}

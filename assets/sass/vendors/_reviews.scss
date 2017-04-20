@@ -1,0 +1,125 @@
+.vendor-info-items {
+	.single-rating .stars {
+		font-size: 28px;
+	}
+}
+
+.reviews {
+	margin-top: 50px;
+	background: #f9f8f8;
+	padding: 10px 20px;
+
+	h2 {		
+		margin-bottom: 0;
+	}
+
+	h3 {
+		display: block;
+		margin: 0;
+	}
+
+	.stars {
+		font-size: 28px;
+	}
+
+	.drop_cap {
+		display: none;
+	}
+
+	.rr_title {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	.full-testimonial {
+	    float: none !important;
+	    width: 100% !important;
+	    padding: 0 0 10px 0!important;
+	    display: block;
+	    margin-bottom: 20px;
+	    border-bottom: 1px solid #e2e2e2;
+
+	    &:last-of-type {
+	    	border-bottom: none;
+	    	margin-bottom: 0;
+	    }
+
+	    .rr_review_text {
+	    	font-size: 14px;
+	    }
+
+	    .rr_review_name {
+	    	padding-right: 0 !important;
+	    }
+	}
+}
+
+.review-form {
+	margin-top: 50px;
+	background: #f5f5f5;
+	padding: 10px 20px; 
+
+	.upload-gate {
+		border: none;
+	}
+
+	.rr_successful {
+		background: #fff;
+	}
+
+	.rr_form_heading {
+		text-align: left !important;
+		display: block;
+
+		&:after {
+			position: initial !important;
+		}
+	}
+
+	h3 {
+		display: block;
+		margin: 0;
+	}
+
+	tbody {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		font-size: 14px;
+
+		tr {
+			flex: 1 1 50%;
+			padding: 10px;
+
+			&:nth-last-child(2),
+			&:nth-last-child(1) {
+				flex: 1 1 100%;
+			}
+		}
+	}
+
+	.rr_form_input {
+		width: 100%;
+		display: block;
+		padding: 0 !important;
+
+		input {
+			padding: 2px 10px;
+		}
+
+		textarea {
+			resize: vertical;
+			max-height: 100px;
+			width: 100%	!important;
+			display: block;
+		}
+	}
+
+	.rr_stars_container {
+		font-size: 18px;
+	}
+}
+
+.message-vendor .message {
+	 border-left: none;
+}
