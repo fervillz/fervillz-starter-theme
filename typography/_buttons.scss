@@ -1,0 +1,65 @@
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	padding: 16px 48px;
+	background: $color-primary;
+	font-family: $font-heading;
+	color: #fff;
+	width: auto;
+	border: none;
+	text-align: center;
+	cursor: pointer;	
+	transition: all 100ms ease-out;
+	display: inline-block;
+	text-transform: uppercase;
+
+	&:hover {
+		transition: all 100ms ease-out;
+		opacity: .9;
+	}
+
+	&.glass {
+		box-shadow: 0 0 0 2px $color-primary;
+		background: transparent;
+		color: $color-primary;
+
+		&:hover {
+			background: $color-primary;
+			color: #fff;
+		}
+	}
+
+	&.white {
+		background: #fff;
+		color: $color-primary;
+
+		&:hover,
+		&:focus {
+			box-shadow: 0 0 0 2px $color-primary;
+		}
+	}
+
+	&.black {
+		background: $color__darkgray;
+		color: #fff;
+		box-shadow: none;
+
+		&:hover,
+		&:focus {
+			opacity: .9;
+		}
+
+		&.glass {
+			box-shadow: 0 0 0 2px #000;
+			background: transparent;
+			color: #000;
+
+			&:hover {
+				background: #000;
+				color: #fff;
+			}
+		}
+	}
+}
