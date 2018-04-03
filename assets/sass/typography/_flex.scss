@@ -23,5 +23,21 @@
 
 	&-auto {
 		flex: auto;
+	} 
+	
+	&-1-1 {
+		@include flex(1, 1);
+	}
+
+	&-1-0 {
+		@include flex(1, 0);
+	}
+
+	&-0-0 {
+		@include flex(0, 0);
+	}
+
+	&-0-1 {
+		@include flex(0, 1);
 	}
 }
