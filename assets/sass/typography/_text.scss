@@ -1,0 +1,45 @@
+.text {
+	&-light {
+		font-weight: 300;
+	}
+	&-normal {
+		font-weight: 400;
+	}
+	&-medium {
+		font-weight: 500;
+	}
+	&-bold {
+		font-weight: 700;
+	}
+	&-italic {
+		font-style: italic;
+	}
+	&-primary {
+		color: $color-primary;
+	}
+	&-accent {
+		color: $color-accent;
+	}
+	&-gray {
+		color: $color__gray;
+	}
+	&-default {
+		color: inherit;
+	}
+	&-case-up {
+		text-transform: uppercase;
+	}
+	&-text-case-cap {
+		text-transform: capitalize;
+	}
+	&-text-case-low {
+		text-transform: lowercase;
+	}
+	&-text-normal {
+		text-transform: unset;
+	}
+	&-text-default {
+		text-transform: inherit;
+	}
+}
+
