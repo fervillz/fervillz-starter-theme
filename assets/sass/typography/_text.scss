@@ -14,31 +14,31 @@
 	&-italic {
 		font-style: italic;
 	}
-	&-primary {
+	&-color-primary {
 		color: $color-primary;
 	}
-	&-accent {
+	&-color-accent {
 		color: $color-accent;
 	}
-	&-gray {
+	&-color-gray {
 		color: $color__gray;
 	}
-	&-default {
+	&-color-default {
 		color: inherit;
 	}
 	&-case-up {
 		text-transform: uppercase;
 	}
-	&-text-case-cap {
+	&-case-cap {
 		text-transform: capitalize;
 	}
-	&-text-case-low {
+	&-case-low {
 		text-transform: lowercase;
 	}
-	&-text-normal {
+	&-case-normal {
 		text-transform: unset;
 	}
-	&-text-default {
+	&-case-default {
 		text-transform: inherit;
 	}
 }

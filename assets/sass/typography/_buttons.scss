@@ -62,4 +62,16 @@ input[type="submit"] {
 			}
 		}
 	}
+
+	&.btn-mini {
+		padding: 10px 24px;
+	}
+
+	&.btn-mini2x {
+		padding: 5px 10px;
+	}
+
+	&.rounded {
+		border-radius: 3px;
+	}
 }

@@ -1,0 +1,33 @@
+.pos {
+	&-inherit {
+		position: inherit;
+	}
+	
+	&-unset {
+		position: unset;
+	}
+
+	&-abs {
+		position: absolute;
+	}
+
+	&-rel {
+		position: reltive;
+	}
+
+	&-top {
+		top: 0;
+	}
+
+	&-right {
+		right: 0;
+	}
+
+	&-bottom {
+		bottom: 0;
+	}
+
+	&-left {
+		left: 0;
+	}
+}

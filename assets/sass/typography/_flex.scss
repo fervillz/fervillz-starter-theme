@@ -1,0 +1,27 @@
+@mixin flex($grow $shrink) {
+	&-25 {
+		flex: $grow $shrink 25%;
+	}
+	&-33 {
+		flex: $grow $shrink 33.3333334%;
+	}
+	&-50 {
+		flex: $grow $shrink 50%;
+	}
+	&-75 {
+		flex: $grow $shrink 75%;
+	}
+	&-100 {
+		flex: $grow $shrink 100%;
+	}
+}
+
+.flex {
+	&-wrap {
+		flex-wrap: wrap;
+	}
+
+	&-auto {
+		flex: auto;
+	}
+}
