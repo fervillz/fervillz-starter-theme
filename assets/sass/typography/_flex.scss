@@ -1,4 +1,4 @@
-@mixin flex($grow $shrink) {
+@mixin flex($grow, $shrink) {
 	&-25 {
 		flex: $grow $shrink 25%;
 	}
@@ -24,4 +24,5 @@
 	&-auto {
 		flex: auto;
 	}
+
 }
